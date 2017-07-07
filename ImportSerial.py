@@ -7,4 +7,5 @@ arduino.baudrate = 9600
 while True:
     data = arduino.readline()
     pieces = data.split('\t')
-    print len(pieces)
+    for i in range(len(pieces)):
+        print pieces[i]

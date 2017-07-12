@@ -13,6 +13,6 @@ while i<21:
     pieces = data.split(',')
     print '{0}: {1}'.format(pieces,dt.datetime.now())
     if len(pieces) == 2:
-        sql = "insert into read_port.temp1 (temp,date_key) values('{0},{1}','{2}')".format(pieces[0],pieces[1],dt.datetime.now())
+        sql = "insert into read_port.temp2 (temp,date_key) values('{0},{1}','{2}')".format(pieces[0],pieces[1],dt.datetime.now())
         con.connect().execute(sql)
         i += 1
